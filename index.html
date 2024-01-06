@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin: 20px;
+    }
+
+    .section {
+      box-sizing: border-box;
+      float: left;
+      width: 100%;
+      padding: 20px;
+      border: 1px solid black;
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .section-title {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: #e74c3c;
+      color: white;
+      padding: 5px 10px;
+      border: 1px solid black;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+      .section {
+        width: 50%;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .section {
+        width: 33.33%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Responsive Layout Example</h1>
+
+  <div class="section">
+    <div class="section-title">Chicken</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec venenatis leo.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Beef</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec venenatis leo.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Sushi</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec venenatis leo.</p>
+  </div>
+
+</body>
+</html>
